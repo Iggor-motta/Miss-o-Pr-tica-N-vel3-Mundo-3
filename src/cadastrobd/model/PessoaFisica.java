@@ -1,9 +1,5 @@
 package cadastrobd.model;
 
-/**
- *
- * @author Cleyton
- */
 public class PessoaFisica extends Pessoa {
     
     private String cpf;
