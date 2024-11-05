@@ -3,10 +3,7 @@ package cadastrobd.model.util;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author Cleyton
- */
+
 public class SequenceManager {
     
     public int getValue(String sequence) throws SQLException {
