@@ -8,10 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import cadastrobd.model.util.ConectorBD;
 
-/**
- *
- * @author Cleyton
- */
+
 public class PessoaFisicaDAO {
 
     private final ConectorBD connector;
