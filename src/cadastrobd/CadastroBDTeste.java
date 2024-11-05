@@ -11,10 +11,7 @@ import cadastrobd.model.PessoaJuridicaDAO;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
- *
- * @author Cleyton
- */
+
 public class CadastroBDTeste {
     
     private static final Logger LOGGER = Logger.getLogger(CadastroBDTeste.class.getName());
