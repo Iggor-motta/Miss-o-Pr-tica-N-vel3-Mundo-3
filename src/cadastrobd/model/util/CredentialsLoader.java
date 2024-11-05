@@ -20,11 +20,7 @@ import java.util.logging.Level;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- *
- * @author Cleyton
- * @source https://mkyong.com/java/how-to-read-xml-file-in-java-dom-parser/
- */
+
 public class CredentialsLoader {
 
     private static final Logger LOGGER = Logger.getLogger(CredentialsLoader.class.getName());
@@ -40,19 +36,18 @@ public class CredentialsLoader {
     }
 
     private void run() {
-        // Instantiate the Factory
+     
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
         try {
-            // optional, but recommended: process XML securely, avoid attacks like XML External Entities (XXE)
+            
             dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 
-            // parse XML file
+           
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.parse(new File(FILENAME));
 
-            // optional, but recommended, according to:
-            // http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
+           
             doc.getDocumentElement().normalize();
 
             NodeList list = doc.getElementsByTagName("user");
