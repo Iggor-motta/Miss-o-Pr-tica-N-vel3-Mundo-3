@@ -12,10 +12,6 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
- *
- * @author Cleyton
- */
 public class CadastroBD {
     
     private static final Logger LOGGER = Logger.getLogger(CadastroBD.class.getName());
@@ -246,9 +242,7 @@ public class CadastroBD {
         }
     }
     
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         new CadastroBD().run();
     }
